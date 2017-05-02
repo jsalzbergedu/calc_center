@@ -25,9 +25,14 @@
       window.onload = function() {
           var home = document.getElementById("home");
           home.onclick = function() {
-              document.getElementById("pagetitle").innerHTML = "Welcome!";
-              document.getElementById("pagecontent").innerHTML = "This page contains a list of topics and practice problems for an AP AB Calculus course. Click on the menu to browse topics.";
+      document.getElementById("pagetitle").innerHTML = "<a>Welcome!<a>";
+              document.getElementById("pagecontent").innerHTML = "This page contains a list of topics, practice problems, and study tips for an AP AB Calculus course. Click on the menu to browse topics.";
               return false;
+          }
+          var exam = document.getElementById("exam");
+          exam.onclick = function() {
+              document.getElementById("pagetitle").innerHTML = "The Exam"
+              document.getElementById("pagecontent").innerHTML = "<h2 class='mdc-typography--display1'>What the Exam Is</h2>The AP AB Calculus Exam tests your knowlege of the topics in AB Calculus through two multiple choice sections, one with and one without a calculator, and two free response question sections, one with and one without a calculator.<h2 class='mdc-typography--display1'>Rule of Four </h2> There are four ways you must demonstrate compentence on the AP AB Calculus exam. "
           }
       }
     </script>
@@ -78,8 +83,8 @@
             <a class="mdc-list-item mdc-temporary-drawer--selected" href="#" id="home">
               <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">home</i>Home
             </a>
-            <a class="mdc-list-item mdc-temporary-drawer--selected" href="#">
-              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Rule of Four
+            <a class="mdc-list-item mdc-temporary-drawer--selected" href="#" id="exam">
+              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>The Exam
             </a>
             <a class="mdc-list-item" href="#">
               <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star_border</i>Precal - Polynomial Functions
@@ -103,10 +108,11 @@
         </nav>
       </nav>
     </aside>
-    <main class="demo-main mdc-toolbar-fixed-adjust">
-      <h1 class="mdc-typography--display1" id="pagetitle">Welcome!</h1>
-      <p class="mdc-typography--body1" id="pagecontent">This page contains a list of topics and practice problems for an AP AB Calculus course. Click on the menu
-      to browse topics.</p>
+    <main class="demo-main mdc-toolbar-fixed-adjust" id="texthandle">
+      <h1 class="mdc-typography--display2" id="pagetitle">Welcome!</h1>
+      <p class="mdc-typography--body1" id="pagecontent">This page contains a list of topics, practice problems, and study tips for an AP
+	AB Calculus course. Click on the menu to browse topics.
+      </p>
     </main>
 
     <script src="https://material-components-web.appspot.com/assets/material-components-web.js" charset="utf-8"></script>
