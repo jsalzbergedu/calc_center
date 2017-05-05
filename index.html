@@ -32,16 +32,34 @@
           var exam = document.getElementById("exam");
           exam.onclick = function() {
               document.getElementById("pagetitle").innerHTML = "The Exam"
-              document.getElementById("pagecontent").innerHTML = "<h2 class='mdc-typography--display1'>What the Exam Is</h2>The AP AB Calculus Exam tests your knowlege of the topics in AB Calculus through two multiple choice sections, one with and one without a calculator, and two free response question sections, one with and one without a calculator. The entire test is three hours long.<h2 class='mdc-typography--display1'>Rule of Four </h2> There are four ways you must demonstrate compentence to do well on the AP AB Calculus exam. The exam tests for Analytic, Numeric, Graphical, and Verbal understanding of Calculus concepts. Analytic refers to symbolic manipulation, Numeric refers to applying knowledge to plain numbers, Graphical refers to understanding graphs, and Verbal refers to explaining a concept in clear, concise English.<h2 class='mdc-typography--display1'>Study Tips</h2>Slow and steady wins the race. If you spend enough time and effort, you will learn things that at first seem impossible.<p>Take practice tests, e.g., <a href='https://apstudent.collegeboard.org/apcourse/ap-calculus-ab/exam-practice'>the 1988 and 1998 released exams,</a> which will be referenced throughout this website. On worksheets, practice problems, and practice exams, find all questions you missed, learn how to do them and correct them.</p><p>Approach every topic from every rule of four skill that can apply.</p><p>Get familiar with the TI 84. Specifically, get familiar with <a href='https://brownmath.com/ti83/deriv.htm'>nderiv</a> and fnint <a href='https://brownmath.com/ti83/integr.htm'>for older</a> and <a href='https://epsstore.ti.com/OA_HTML/csksxvm.jsp?nSetId=100842'>for newer</a> calculators. Furthermore, understand that y1-y9-y10 on the y= button are functions and can be evaluated at a point, e.g., entering y1(0) in the main window evaluates y1 at x=0. Also note that you can use sto&gt; to store the result of an evaluation, including storing x and y. It is also helpful to <a href='http://www.instructables.com/id/Quadratic-Formula-for-the-TI-83-and-84/'>add the quadratic formula to your calculator.</a><p> Keep your precal knowledge fresh. Especially volume, domain, range, peicewise functions, and values for sine and cosine. Some identities for sine and cosine are also often helpful, especially sin&#94;2 + cos&#94;2 = 1. Make sure you know how to graph trig functions with and without a calculator.<p>It is helpful to note the relative values of pi and e: 3.1&lt;pi&lt;3.2 and 2.7&lt;e&lt;2.8.</p><p>The point slope formula, y = mx + b, will slow you down. You can move more quickly through the exam with y = m(x-x1) + y1, and on the free response questions the answers are expected in this form.</p>"
+              document.getElementById("pagecontent").innerHTML = "<h2 class='mdc-typography--display1'>What the Exam Is</h2>The AP AB Calculus Exam tests your knowlege of the topics in AB Calculus through two multiple choice sections, one with and one without a calculator, and two free response question sections, one with and one without a calculator. The entire test is three hours long.<h2 class='mdc-typography--display1'>Rule of Four </h2> There are four ways you must demonstrate compentence to do well on the AP AB Calculus exam. The exam tests for Analytic, Numeric, Graphical, and Verbal understanding of Calculus concepts. Analytic refers to symbolic manipulation, Numeric refers to applying knowledge to plain numbers, Graphical refers to understanding graphs, and Verbal refers to explaining a concept in clear, concise English.<h2 class='mdc-typography--display1'>Study Tips</h2>Although you can and often should define your own functions and constants, make sure to return answers in the same format as they are given.<p>Know well the terms and notation, because questions often contain irrelivant or misleading information that requires careful discernment.</p><p>Slow and steady wins the race. If you spend enough time and effort, you will learn things that at first seem impossible.</p><p>Take practice tests, e.g., <a href='https://apstudent.collegeboard.org/apcourse/ap-calculus-ab/exam-practice'>the 1988 and 1998 released exams,</a> which will be referenced throughout this website. On worksheets, practice problems, and practice exams, find all questions you missed, learn how to do them and correct them.</p><p>Approach every topic from every rule of four skill that can apply.</p><p>Get familiar with the TI 84. Specifically, get familiar with <a href='https://brownmath.com/ti83/deriv.htm'>nderiv</a> and fnint <a href='https://brownmath.com/ti83/integr.htm'>for older</a> and <a href='https://epsstore.ti.com/OA_HTML/csksxvm.jsp?nSetId=100842'>for newer</a> calculators. Furthermore, understand that y1-y9-y10 on the y= button are functions and can be evaluated at a point, e.g., entering y1(0) in the main window evaluates y1 at x=0. Also note that you can use sto&gt; to store the result of an evaluation, including storing x and y. It is also helpful to <a href='http://www.instructables.com/id/Quadratic-Formula-for-the-TI-83-and-84/'>add the quadratic formula to your calculator.</a><p> Keep your precal knowledge fresh. Especially volume, domain, range, peicewise functions, and values for sine and cosine. Some identities for sine and cosine are also often helpful, especially sin&#94;2 + cos&#94;2 = 1. Make sure you know how to graph trig functions with and without a calculator.<p>It is helpful to note the relative values of pi and e: 3.1&lt;pi&lt;3.2 and 2.7&lt;e&lt;2.8.</p><p>The point slope formula, y = mx + b, will slow you down. You can move more quickly through the exam with y = m(x-x1) + y1, and on the free response questions the answers are expected in this form.</p>"
           }
+
+          var precal = document.getElementById("precal");
+          precal.onclick = function() {
+          document.getElementById("pagetitle").innerHTML = "Precal Topics";
+          document.getElementById("pagecontent").innerHTML = "You must have a good grasp of precal topics to do well on the AP exam. Brush up on <a href='http://www.algebralab.org/lessons/lesson.aspx?file=Algebra_LogarithmProperties.xml'>logs and ln</a>, <a href='http://www.algebralab.org/lessons/lesson.aspx?file=Trigonometry_TrigTransformations.xml'>graphing trigonometric functions</a>, <a href='http://www.softschools.com/math/calculus/finding_horizontal_asymptotes_of_rational_functions/'>rational functions</a>, and <a href='http://www.vias.org/calculus/01_real_and_hyperreal_numbers_01_02.html'>intervals</a>. Note that the AP exam may use both the bracket and parentheses notation and the a&lt;x&lt;b notation.";
+              return false;
+          }
+
+
           var lims = document.getElementById("lims");
           lims.onclick = function() {
               document.getElementById("pagetitle").innerHTML = "Limits";     
-              document.getElementById("pagecontent").innerHTML = "<h2 class='mdc-typography--display1'>What a Limit Is</h2>A limit approaches a value without reaching it. For instance, if you move forward one step, then half that step, and so on, you can never repeat that infinity times, but as you approach infinity repititions, you approach two full steps in distance.<h2 class='mdc-typography--display1'>Ways of Solving Limits</h2>You can use a graph, properties for limits, direct substitution, simplify for direct substitution, a table or chart, l&#39;hopital&#39;s rule, reasoning about rates, or use memorized limits.<h2 class='mdc-typography--display1'>Existance of the Limit</h2> A one sided limit is a limit that only approaches from one side of the graph. There notation looks like this: <img src='http://i.imgur.com/ewx0KIj.png' alt='Image Cannot Be Displayed' style='vertical-align:middle;'></img>. This is the limit of f of x as x approaches a from the left side. If there was a plus above the a instead of a minus, it would be from the right side. An easy way to remember the difference is that if there is a negative above the value, x&lt;value, and if there is a positive above the value, x&gt;value.<p> If for a value c, <img src='http://i.imgur.com/mU9rp4e.png' alt='Image Cannot Be Displayed' style='vertical-align:middle;'></img>, then the limit as f of x approaches c exists.</p><h2 class='mdc-typography--display1'>Continuity</h2> Limits can be used to find out if a function is continuous at a point. The function f is continuous at the value x=c if "
+              document.getElementById("pagecontent").innerHTML = "<h2 class='mdc-typography--display1'>What a Limit Is</h2>A limit approaches a value without reaching it. For instance, if you move forward one step, then half that step, and so on, you can never repeat that infinity times, but as you approach infinity repititions, you approach two full steps in distance.<h2 class='mdc-typography--display1'>Ways of Solving Limits</h2>You can use a graph, properties for limits, direct substitution, simplify for direct substitution, a table or chart, l&#39;hopital&#39;s rule, reasoning about rates, or use memorized limits.<h2 class='mdc-typography--display1'>Existance of the Limit</h2> A one sided limit is a limit that only approaches from one side of the graph. There notation looks like this: <img src='http://i.imgur.com/ewx0KIj.png' alt='Image Cannot Be Displayed' style='vertical-align:middle;'></img>. This is the limit of f of x as x approaches a from the left side. If there was a plus above the a instead of a minus, it would be from the right side. An easy way to remember the difference is that if there is a negative above the value, x&lt;value, and if there is a positive above the value, x&gt;value.<h2 class='mdc-typography--display1'>Existance of the Limit</h2> If for a value c, <img src='http://i.imgur.com/BK0DAXQ.png' alt='Image Cannot Be Displayed' style='vertical-align:middle;'></img>, then the limit as f of x approaches c exists.<h2 class='mdc-typography--display1'>Continuity</h2> Limits can be used to find out if a function is continuous at a point. The function f is continuous at the value x=c if <img src='http://i.imgur.com/3eSuYg9.png' alt='Image Cannot Be Displayed' style='vertical-align:middle;'></img>"
           }     
+
+          var der = document.getElementById("der");
+          der.onclick = function() {
+          document.getElementById("pagetitle").innerHTML = "Blorp Blip!";
+              document.getElementById("pagecontent").innerHTML = "Blip Blorp!!";
+              return false;
+          }
+
+
       }
     </script>
-    <script src="https://material-components-web.appspot.com/assets/material-components-web.css.js"charset="utf-8"></script>
+    <script src="https://material-components-web.appspot.com/assets/material-components-web.css.js" charset="utf-8"></script>
     <style>
     .demo-body {
       padding: 0;
@@ -91,17 +109,17 @@
             <a class="mdc-list-item" href="#" id="exam">
               <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>The Exam
             </a>
+            <a class="mdc-list-item" href="#" id="precal">
+              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Precal Topics
+            </a>
             <a class="mdc-list-item" href="#" id="lims">
               <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Limits
             </a>
-            <a class="mdc-list-item" href="#">
-              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Precal - Trigonometric Functions
-            </a>
-            <a class="mdc-list-item" href="#">
-              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Limits
-            </a>
-            <a class="mdc-list-item" href="#">
+            <a class="mdc-list-item" href="#" id="der">
               <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>The Derivative
+            </a>
+            <a class="mdc-list-item" href="#">
+              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Applications of the Derivative
             </a>
             <a class="mdc-list-item" href="#">
               <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Applications of Derivatives
